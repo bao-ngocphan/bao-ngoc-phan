@@ -145,6 +145,18 @@
     vertical-align: middle;
   }
 
+  h2.section-title{
+    font-family:'Inter', sans-serif;
+    font-weight: 900;
+    font-size: clamp(2.4rem, 6vw, 4.6rem);
+    line-height: 1.05;
+    letter-spacing: -.01em;
+    text-transform: uppercase;
+    margin: 0;
+    color: var(--white);
+  }
+  h2.section-title .accent{ color: var(--cream); }
+
   p.body-text{
     font-family:'Itim', cursive;
     font-size: 1.12rem;
@@ -362,7 +374,7 @@
           </div>
           <div class="info-card">
             <h3>📷 PHOTOGRAPHY PROJECT</h3>
-            <p>I started this passion project in 2024, where I share the photos that I take and also the stories behind them.</p>
+            <p>I started this passion project in 2024, where I share the photos that I take and also the stories behind them. You can find my work <a href="https://www.facebook.com/profile.php?id=61568577570872" target="_blank" rel="noopener" style="color: var(--cream); text-decoration: underline; text-underline-offset: 3px; font-weight: 600;">here</a>.</p>
           </div>
         </div>
       </div>
@@ -370,7 +382,7 @@
 
     <!-- PROJECTS -->
     <section class="page" id="page-projects" aria-labelledby="projects-heading">
-      <h2 class="section-title" id="projects-heading">Projects &amp; <span class="accent">Portfolio.</span></h2>
+      <h2 class="section-title" id="projects-heading">PROJECTS &amp; <span class="accent">PORTFOLIO.</span></h2>
 
       <div class="pills" role="group" aria-label="Filter projects">
         <button class="pill" data-filter="research" aria-pressed="true">research</button>
@@ -387,6 +399,8 @@
         <button type="button" class="project-card hide" data-category="writing" data-title="Writing"><span class="tag">Writing</span><p>Coming soon.</p></button>
         <button type="button" class="project-card hide" data-category="writing" data-title="Writing"><span class="tag">Writing</span><p>Coming soon.</p></button>
 
+        <button type="button" class="project-card hide" data-category="photos" data-title="Photos"><span class="tag">Photos</span><p>Coming soon.</p></button>
+        <button type="button" class="project-card hide" data-category="photos" data-title="Photos"><span class="tag">Photos</span><p>Coming soon.</p></button>
         <button type="button" class="project-card hide" data-category="photos" data-title="Photos"><span class="tag">Photos</span><p>Coming soon.</p></button>
       </div>
     </section>
