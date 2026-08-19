@@ -462,6 +462,23 @@
     });
   });
 
+  // Project card -> detail page
+  var detailTitle = document.getElementById('detail-title');
+  var detailBack = document.getElementById('detail-back');
+  var FACEBOOK_URL = 'https://www.facebook.com/profile.php?id=61568577570872';
+  cards.forEach(function(card){
+    card.addEventListener('click', function(){
+      if(card.dataset.category === 'photos'){
+        window.open(FACEBOOK_URL, '_blank', 'noopener');
+        return;
+      }
+      detailTitle.textContent = card.dataset.title || 'Project';
+      showPage('detail');
+    });
+  });
+  if(detailBack){
+    detailBack.addEventListener('click', function(){ showPage('projects'); });
+  }
 
   // CV page "research photos" link -> Projects page, photos filter
   var researchPhotosLink = document.getElementById('research-photos-link');
